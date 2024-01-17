@@ -1,0 +1,88 @@
+.access {
+    margin-top: 6.25rem;
+}
+
+.founder-img {
+    width: 82%;
+    max-width: 22rem;
+    margin: 0 auto -3.5rem;
+
+    position: relative;
+    z-index: -1;
+}
+
+.access-text-container {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.access-text-container h3 {
+    margin-top: .5rem;
+}
+
+.access-text-container p {
+    margin: 1rem 0 1.5rem;
+}
+
+.pattern-3 { display: none; }
+
+
+/* TABLET */
+
+@media (min-width: 48em) {
+    .founder-img {
+        width: 41%;
+        max-width: 29.875em;
+        margin: 0 auto -18% 0;
+    }
+
+    .access-text-container {
+        width: 74.5%;
+        padding: 3.5rem;
+        text-align: start;
+        margin-inline-start: auto;
+    }
+    
+    .access-text-container p {
+        margin: 1.5rem 0;
+    }
+
+    .pattern-3 { 
+        display: block; 
+        position: absolute;
+        bottom: -27%;
+        inset-inline-end: 3%;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 75em) {
+    .access {
+        margin-top: 6.875rem;
+    }
+
+    .founder-img {
+        width: 43%;
+        margin: 0 auto -28% 0;
+    }
+
+    .access-text-container {
+        width: 65%;
+        padding: 4rem;
+        text-align: start;
+        margin-inline-start: auto;
+    }
+    
+    .access-text-container p {
+        margin: 2rem 0;
+    }
+
+    .pattern-3 { 
+        bottom: -15%;
+        inset-inline-end: 10%;
+    }
+}

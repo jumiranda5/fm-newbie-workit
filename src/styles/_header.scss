@@ -1,0 +1,21 @@
+header { 
+    display: flow-root;
+    background-color: var(--clr-primary);
+}
+
+header .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 48rem) {
+    header .content-wrapper {
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+    }
+}

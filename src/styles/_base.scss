@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Fraunces';
+    font-weight: 600;
+    src: url(../assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf) 
+         format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(../assets/fonts/manrope/Manrope-VariableFont_wght.ttf) 
+         format('truetype');
+}
+
+:root {
+    --clr-primary: #24053E;
+    --clr-secondary: #584D62;
+    --clr-accent: #44FFA1;
+    --clr-light-gray: #FCF8FF;
+    --clr-white: #FFFFFF;
+
+    --font-heading: Fraunces, serif;
+    --font-body: Manrope, sans-serif;
+
+    --path-circle: circle(250vw at 50% calc(100% - 250vw))
+}
+
+body {
+    color: var(--clr-primary);
+    font-family: var(--font-body);
+    line-height: 1.77;
+}
+
+.sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+
+.logo {
+    width: 6.125rem;
+}
+
+// Links
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    transition: all .3s;
+}
+
+a[data-type="primary"] {
+    padding: 0.77em 1.33em;
+    border: 2px solid var(--clr-accent);
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+}
+
+a[data-type="primary"]:hover {
+    background-color: #00000000;
+    color: var(--clr-accent);
+}
+
+a[data-type="secondary"] {
+    color: var(--clr-white);
+    border-bottom: 0.1875rem solid var(--clr-accent);
+}
+
+a[data-type="secondary"]:hover {
+    color: var(--clr-accent);
+}
+
+// Wrapper
+
+.content-wrapper {
+    margin: 0 auto;
+    width: 92%;
+}
+
+@media (min-width: 48em) {
+    .content-wrapper {
+        width: clamp(41.875em, 90%, 69.5rem);
+    }
+
+    .content-wrapper[data-width="sm"] {
+        width: clamp(35.75rem, 70%, 69.5rem);
+    }
+}
+
+@media (min-width: 75em) {
+    .content-wrapper[data-width="sm"] {
+        width: clamp(41.875em, 90%, 69.5rem);
+    }
+}
+
+@media (min-width: 100em) {
+    :root {
+        font-size: 1.25rem;
+    }
+}

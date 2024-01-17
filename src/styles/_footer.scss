@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    margin: 4.625rem 0;
+}
+
+.social-links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: .75rem;
+}
+
+.social-link {
+    padding: .5rem;
+}
+
+.social-link svg {
+    width: 1.5rem;
+    height: 1.25rem;
+}
+
+.social-link svg path {
+    transition: all .3s;
+}
+
+.social-link:hover svg path {
+    fill: var(--clr-primary);
+}
+
+@media (min-width: 48em) {
+    footer {
+        margin: 5rem 0;
+    }
+}
+
+@media (min-width: 75em) {
+    footer {
+        margin: 7.5rem 0 5rem;
+    }
+}
