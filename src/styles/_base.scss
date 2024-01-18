@@ -101,6 +101,12 @@ a[data-type="secondary"]:hover {
 
 @media (min-width: 100em) {
     :root {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 160em) {
+    :root {
         font-size: 1.25rem;
     }
 }
