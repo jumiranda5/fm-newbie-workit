@@ -88,11 +88,16 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
         align-items: start;
-        padding: 6.625rem 0 10.75rem;
+        padding: 5.625rem 0 10.75rem;
     }
 
     .advantages-list li {
         display: block;
+    }
+
+    .advantages-list li::before {
+        width: 3.5rem;
+        font-size: 1.5rem;
     }
 
     .advantages-list h3,
@@ -101,6 +106,6 @@
     }
 
     .advantages-list h3 {
-        margin: 3.5rem 0 1rem;
+        margin: 3.5rem 0 1.75rem;
     }
 }
