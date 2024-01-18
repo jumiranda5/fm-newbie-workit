@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "dev": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "git push origin main && git subtree push --prefix dist origin gh-pages"
   },
   "author": "Juliana Miranda",
   "license": "ISC",
