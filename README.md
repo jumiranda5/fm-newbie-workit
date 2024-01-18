@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/workit-landing-page-RUw7c304S0)
+- Live Site URL: [Github Pages](https://jumiranda5.github.io/fm-newbie-workit/)
 
 ## Useful resources
 
